@@ -1,0 +1,149 @@
+.G3Animated {
+    background: linear-gradient(270deg, #48acd4, #50944c);
+    background-size: 600% 600%;
+    animation: goal3Animation 3s ease infinite;
+}
+
+@keyframes goal3Animation {
+    0%{background-position:100% 50%}
+    100%{background-position:0% 100%}
+}
+
+.G6Animated {
+    background: linear-gradient(270deg, #48acd4, #48acd4, #50944c);
+    background-size: 600% 600%;
+    animation: goal6Animation 3s ease infinite;
+}
+
+@keyframes goal6Animation {
+    0%{background-position:0% 100%}
+    100%{background-position:50% 100%}
+}
+
+
+@font-face {
+    font-family: lemonmilk;
+    src: url(LEMONMILK-Regular.otf);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #982454;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #50944c;
+}
+
+.waterDrop {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    animation-name: waterdrop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes waterdrop {
+    0%   {left:0%; top:0%;}
+    50% {left:94%; top:94%;}
+    100%   {left:0%; top:0%;}
+}
+
+.heart {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    animation-name: heart;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes heart {
+    0%   {left:94%; top:94%;}
+    50% {left:0%; top:0%;}
+    100%   {left:94%; top:94%;}
+}
+
+
+.bigtext {
+    text-align: center;
+    color: black;
+    font-family: lemonmilk;
+    font-size: 40px;
+}
+
+.btn-group {
+    text-align: center;
+}
+
+.button1:hover {
+    opacity: 90%;
+}
+
+.button2:hover {
+    opacity: 90%;
+}
+
+.button {
+    cursor: pointer;
+    text-align: center;
+    vertical-align:top;
+    align-items: center;
+    font-family: lemonmilk;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+
+}
+
+.button1 {
+    background-image: url('Goal3.png');
+    border: 2px solid #50944c;
+    width: 250px;
+    height: 250px;
+
+}
+
+.button2 {
+    background-image: url('Goal6.png');
+    border: 2px solid #48acd4;
+    width: 250px;
+    height: 250px;
+}
+
+body {
+    background: linear-gradient(270deg, #48acd4, #50944c);
+    font-family:sans-serif;
+}
+
+.navbutton {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color:#982454;
+    border:none;
+}
+
+.navbutton:hover {
+    background-color:#50944c;
+    cursor:pointer;
+  }

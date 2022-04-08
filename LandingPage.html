@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="landingStyle.css">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div id="disappear">
+            <div class="navbar">
+                <button id="G3Animation" class="navbutton" onclick="G3Animation()">Goal 3</button>
+                <button id="G6Animation" class="navbutton" onclick="G6Animation()">Goal 6</button>
+            </div> 
+
+            <br>
+
+            <div class="bigtext">
+                United Nations Sustainable Development Goals
+            </div>
+
+
+            <br>
+
+            <div class="btn-group">
+
+                <button id="G3Animation" class="button button1" onclick="G3Animation()"></button>
+                <button id="G6Animation" class="button button2" onclick="G6Animation()"></button>
+
+            </div>
+            <br> <br>      
+            <div class="heart">❤️</div><br><br>
+            <div class="waterDrop">💧</div><br><br>
+            <div class="heart">❤️</div><br><br><br><br>
+        </div>
+
+        <script>
+            function G3Animation() {
+                disappear.style.display = "none";
+                document.body.classList.add("G3Animated");
+                setTimeout(() => {
+                 window.location.href = "Goal3.html";
+             }, 2900)
+            }
+            function G6Animation() {
+                disappear.style.display = "none";
+                document.body.classList.add("G6Animated");
+                setTimeout(() => {
+                 window.location.href = "Goal6.html";
+             }, 2900)
+            }
+        </script>
+    </body>
+</html>

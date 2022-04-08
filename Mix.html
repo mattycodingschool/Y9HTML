@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Mix.css">
+    </head>
+    <body>
+        <div id="disappear">
+
+            <div class="navbar">
+                <button id="LAnimation" class="navbutton1" onclick="LAnimation()">Landing Page</button>
+                <button id="G3Animation" class="navbutton2" onclick="G3Animation()">Goal 3</button>
+                <button id="G6Animation" class="navbutton3" onclick="G6Animation()">Goal 6</button>
+            </div><br>
+            <div class="bigtext">A Comparison Of The Goals</div>
+
+           <article class="article2">
+                <p class="p">Health & Well-Being and Clean Water & Sanitation are very closely tied together. One example of this is that to positively impact ones health, they should try and drink water to stay hydrated, while on the flip-side, if you are drinking water, however it isn't clean, it can lead to illnesses which will negatively impact ones health. As well, to have a better well-being and to improve your mental health, making sure that you are drinking enough and that you are hydrated really does make a difference. Or if one feels nervous, splashing some water on your face can help.</p>
+            </article>
+            <hr>
+            <div class="bigtext">How To Help</div>
+            <article class="article1">
+                <h1>Health & Well-Being</h1>
+                <p class="p">If you would like to help with Health & Well Being around the world, there are several charitable organizations that you could donate to, or donating directly to a hospital.</p>
+                <p class="p">For a regional option, donating to <a href="https://www.sickkidsfoundation.com/">Sick Kids</a> is an option. On their website, you have the options to directly donate, or start a fundraiser.</p>
+                <p class="p">For a national option, donating to <a href="https://www.redcross.ca/">The Canadian Red Cross</a> is a charity which is a part of the Red Cross foundation and helps in many ways.</p>
+                <p class="p">For an international option, donating to <a href="https://www.doctorswithoutborders.ca/">Doctors Without Borders</a> is an organizations that make positive impacts all over the world.</p>
+
+            </article>
+
+            <nav class="nav1">
+                <h1>Clean Water & Sanitation</h1>
+                <p class="p">If you would like to help with Clean Water & Sanitation around the world, there are several charitable organizations that you could donate to.</p>
+                <p class="p">For a national option, donating to <a href="https://waterfirst.ngo/">Water First</a> is an organization what works directly with Canadian First Nation communities to give access to clean and safe water.</p>
+                <p class="p">For an international option, donating to <a href="https://www.charitywater.org/">Charity: Water</a> or donating to <a href="https://water.org/">Water.org</a> are both charities which work on providing safe and accessible water worldwide.</p>
+        </div>
+        <script>
+            var disappear = document.getElementById("disappear");
+            function G3Animation() {
+                disappear.style.display = "none";
+                document.body.classList.add("goal3Animated");
+                setTimeout(() => {
+                 window.location.href = "Goal3.html";
+             }, 1150)
+            }
+            function G6Animation() {
+                disappear.style.display = "none";
+                document.body.classList.add("goal6Animated");
+                setTimeout(() => {
+                 window.location.href = "Goal6.html";
+             }, 1150)
+            }
+            function LAnimation() {
+                disappear.style.display = "none";
+                document.body.classList.add("landingAnimated");
+                setTimeout(() => {
+                 window.location.href = "LandingPage.html";
+             }, 2900)
+            }
+        </script>
+        
+    </body>
+</html>

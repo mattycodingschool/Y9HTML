@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Goal3.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="center">
+              <p>❤️</p>
+            </div>
+        </div>
+
+        <div id="disappear">
+            <div class="navbar">
+                <button id="LAnimation" class="navbutton" onclick="LAnimation()">Landing Page</button>
+                <button id="GAnimation" class="navbutton" onclick="GAnimation()">Goal 6</button>
+                <button id="heartAnimation" class="navbutton" onclick="heartAnimation()">Both Goals</button>
+
+                
+            </div> 
+
+            <br>
+
+            <div class="bigtext">
+                Goal 3: Good Health and Well-Being
+            </div><br><br>
+
+
+            <section>
+            <nav>
+                <img src="Health1.jpeg" alt="text" width="100%" height="20%">
+            </nav>
+            
+            <article class="article2">
+                <h1>Health</h1>
+                <p class="p">Health throughout our world has always been an issue. No matter what your age is, everyone is effected by their health and well-being. Especially today in the pandemic, where health is a priority, there is still so much more that can be done. The United Nations have created a goal to ensure a healthy lifestyle. With that being said, there still are issues in this world, and there is still so much more that can be done to complete the goal.</p>
+                <p class="p">One of the best ways to stay healthy is with your food! Making sure to eat a balanced meal, however you should always aim to have some fruits and vegetables in your meal, as well as protein, and make sure to drink enough water. Another way to maintain a healthy lifestyle is by excercising! There are so many sports that one can do, even just running on the treadmill or riding a bike is a great form of exercise.</p>
+                <p class="p">Having a healthy lifestyle is super important, however there are other things that can negatively affect your health. For example, diseases can be very harmful to somebody especially if they are not vaccinated. Another thing that negatively impacts health is heart disease. Some ways to try and prevent this is by not smoking/drinking alcohol, managing your stress, and getting a good sleep.</p> 
+                <p class="p">We are human, and there is no way to know what will come up in life, however we should strive to stay as healthy as possible.</p>
+            </article>
+            </section><br><br><br>
+
+            <section>
+                
+                <article class="leftAlign">
+                    <h1>Wellbeing</h1>
+                    <p class="p">The United Nations have also used this goal to promote a positive well-being. Physical health is important but so is mental health and mental well-being and we all should be looking out for our mental health. Everyone experiences their mental health differently and in different ways and throughout all these differences, there are many ways to improve your mental health.</p>
+                    <p class="p">One of the best ways to improve mental health is by being social. With COVID, it has been harder to be social in-person, and with there being less restrictions, this is the perfect time to start having more in-person social interactions. Hanging out with friends or playing games together is a great way to improve your mental health.</p>
+                    <p class="p">Another way to improve mental health is to take breaks in life. Life gets super stressful, whether it be the next deadline or a test, stress is always there. While a small level of stress is good, when your stress level is too high it can be very bad for you. Taking breaks, even if it's just for an hour or if it's for a day benefits you. Take some time to try meditating, or doing yoga or just playing a game. Try to get your mind off of the thing that is stressing you and come back to it later with a fresh perspective.</p>
+                    <p class="p">All in all, we need to value our mental health and realize all the positive things we can do for it. Whether it's hanging out with friends, taking breaks, or even asking for help when you need, our mental health is super important and we should always try and improve it.</p>
+                </article>
+
+                <nav>
+                    <img src="Health2.jpeg" alt="text" width="100%" height="20%">
+                </nav>
+
+            </section><br><br><br>
+
+            <h3 class="centered">Quiz Time!</h3>
+            <p class="quizText"  class="p">Let's see what you've learned about health!</p>
+
+            <div class="quiz"id="q1">
+                Question 1: What should you always try to include in a meal? <br><br>
+                <input type="radio" name="q1" id="q1.1">Fruits<br>
+                <input type="radio" name="q1" id="q1.2">Vegetables<br>
+                <input type="radio" name="q1" id="q1.3">Protein<br>
+                <input type="radio" name="q1" id="q1.4">All Of The Above<br>
+                <button onclick="q1Answer()">Next Question</button>
+            </div>
+            
+            <div class="quiz"id="q2">
+                What is one way to stay healthy? <br><br>
+                <input type="radio" name="q2" id="q2.1">Always Doing Homework<br>
+                <input type="radio" name="q2" id="q2.2">Exercising<br>
+                <input type="radio" name="q2" id="q2.3">Lying Down<br>
+                <button onclick="q2Answer()">Next Question</button>
+            </div>        
+
+            <div class="quiz"id="q3">
+                How can we stay protected against viruses or disease? <br><br>
+                <input type="radio" name="q3" id="q3.1">Getting vaccinated<br>
+                <input type="radio" name="q3" id="q3.2">Coughing<br>
+                <button onclick="q3Answer()">Next Question</button>
+            </div>        
+
+            <div class="quiz"id="q4">
+                How can you improve your mental health? <br><br>
+                <input type="radio" name="q4" id="q4.1">Gaming All Day<br>
+                <input type="radio" name="q4" id="q4.2">Only Focus On Work<br>
+                <input type="radio" name="q4" id="q4.3">Socialize<br>
+                <button onclick="q4Answer()">Next Question</button>
+            </div>
+
+            <h3 id="results"></h3>
+        </div>
+
+
+        <script>
+            var heart = document.getElementById("container");
+            var byeButton = document.getElementById("heartAnimation");
+            var disappear = document.getElementById("disappear");
+            function heartAnimation() {
+                heart.style.display = "block";
+                byeButton.style.display = "none";
+                disappear.style.display = "none";
+                heart.classList.add("heartAnimated");
+                setTimeout(() => {
+                 window.location.href = "Mix.html";
+             }, 4200)
+            }
+            function GAnimation() {
+                disappear.style.display = "none";
+                document.body.classList.add("goalAnimated");
+                setTimeout(() => {
+                 window.location.href = "Goal6.html";
+             }, 1150)
+            }
+            function LAnimation() {
+                disappear.style.display = "none";
+                document.body.classList.add("landingAnimated");
+                setTimeout(() => {
+                 window.location.href = "LandingPage.html";
+             }, 2900)
+            }
+
+            score = 0;
+            function q1Answer() {
+                if (document.getElementById("q1.4").checked) {
+                    score++;
+                }
+            
+                var q1show = document.getElementById("q1");
+                var q2show = document.getElementById("q2");
+                q1show.style.display = "none";
+                q2show.style.display = "block";
+            }
+
+            function q2Answer() {
+                if (document.getElementById("q2.2").checked) {
+                    score++;
+                }
+            
+                var q2show = document.getElementById("q2");
+                var q3show = document.getElementById("q3");
+                q2show.style.display = "none";
+                q3show.style.display = "block";
+            }
+
+            function q3Answer() {
+                if (document.getElementById("q3.1").checked) {
+                    score++;
+                }
+            
+                var q3show = document.getElementById("q3");
+                var q4show = document.getElementById("q4");
+                q3show.style.display = "none";
+                q4show.style.display = "block";
+            }
+
+            function q4Answer() {
+                if (document.getElementById("q4.3").checked) {
+                    score++;
+                }
+            
+                var q5show = document.getElementById("q4");
+                var showresults = document.getElementById("results");
+                q5show.style.display = "none";
+                showresults.style.display = "block";
+                document.getElementById("results").innerHTML = " Score: " + score + " ";
+            }
+
+        </script>
+    </body>
+</html>
